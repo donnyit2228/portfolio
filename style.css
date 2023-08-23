@@ -3,12 +3,14 @@ body {
     color: #fff;
     background-color: #000;
     font: 16px/28px 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -36,7 +38,7 @@ button {
 }
 
 
-.conteiner {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
@@ -60,8 +62,16 @@ button {
     background-color: #ef5e10;
 }
 
-#header-section {
-    padding: 40px 0 107px;
+.header-section {
+    padding: 10px 0;
+    padding-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    z-index: 3;
+    background-color: #000;
 }
 .header {
     display: flex;
@@ -88,10 +98,11 @@ button {
 
 /* Banner */
 
-#banner-section {
+.banner-section {
     position: relative;
     padding-bottom: 60px;
     overflow: hidden;
+    margin-top: 200px;
 }
 
 .banner {
@@ -161,49 +172,8 @@ button {
     background-color: rgb(52 52 52 / 30%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Rent */
-#rent-section {
+.rent-section {
     padding: 120px 0 120px;
 }
 
@@ -269,23 +239,8 @@ button {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Services */
-#services-section {
+.services-section {
     padding-bottom: 120px;
 }
 
@@ -314,7 +269,7 @@ button {
 
 /* destination */
 
-#destination-section {
+.destination-section {
     padding-bottom: 162px;
 }
 
@@ -371,13 +326,13 @@ button {
 
 
 /* Location */
-#location-section {
+.location-section {
     padding-bottom: 102px;
 }
 
 /* footer */
 
-#footer-section {
+.footer-section {
     padding-top: 40px;
     background-color: #1F1905;
 }
